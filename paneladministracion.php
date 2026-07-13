@@ -57,7 +57,7 @@ function mostrarTablaClientes($resultadoClientes)
             echo "<td>" . htmlspecialchars($cliente["correo"]) . "</td>";
             echo "<td>" . htmlspecialchars($cliente["ciudad"]) . "</td>";
 
-            // Formulario en línea para actualizar el teléfono (clases actualizadas)
+            // Formulario en línea para actualizar el teléfono 
             echo "<td>";
             echo "<form method='POST' class='fila-acciones'>";
             echo "<input type='hidden' name='accionConsulta' value='actualizarCliente'>";
@@ -67,7 +67,7 @@ function mostrarTablaClientes($resultadoClientes)
             echo "</form>";
             echo "</td>";
 
-            // Formulario en línea para eliminar cliente (clases actualizadas)
+            // Formulario en línea para eliminar cliente 
             echo "<td>";
             echo "<form method='POST' class='formulario-eliminar'>";
             echo "<input type='hidden' name='accionConsulta' value='eliminarCliente'>";

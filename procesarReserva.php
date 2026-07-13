@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 3. Preparar la consulta
     $sql = "INSERT INTO clientes (nombre, apellido, rut, telefono, correo, ciudad) VALUES (?, ?, ?, ?, ?, ?)";
 
-    // CORRECCIÓN: Usamos $conexionBd tal como lo definiste en conexion.php
+    
     $stmt = $conexionBd->prepare($sql); 
 
     if ($stmt) {
@@ -32,12 +32,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         $stmt->close();
     } else {
-        // CORRECCIÓN: Usamos $conexionBd aquí también
+        
         echo "Error en la consulta: " . $conexionBd->error;
     }
 } else {
     echo "Acceso denegado.";
 }
 
-// CORRECCIÓN: Cerramos la conexión correcta
+
 $conexionBd->close();

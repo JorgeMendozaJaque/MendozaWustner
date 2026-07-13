@@ -13,7 +13,7 @@ CREATE TABLE usuarios (
     clave VARCHAR(50) NOT NULL
 );
 
--- 2. Tabla estructurada exactamente según tu formulario HTML
+
 CREATE TABLE clientes (
     idCliente INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
@@ -26,7 +26,7 @@ CREATE TABLE clientes (
 
 -- --- INSERCIÓN DE DATOS ---
 
--- Tu usuario administrador para poder entrar al sistema
+
 INSERT INTO usuarios (usuario, clave) 
 VALUES ('jorge', '1234');
 
